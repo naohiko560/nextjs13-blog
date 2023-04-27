@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import './globals.css';
+import '../styles/globals.css';
 import { Inter } from 'next/font/google';
+import Image from 'next/image';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,20 +17,19 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <div>
-        <h1>
-          <Link href={'/'}>Naohiko's Blog</Link>
-        </h1>
-        <p>ようこそ私のテックブログへ</p>
-        <br />
+      <div className="text-center bg-slate-800 p-8 my-6 rounded-md">
+        <Image alt='logo' src="/logo.png" width={40} height={40} className='mx-auto' />
+        <Link href={'/'}>
+          <h1 className="text-3xl text-white font-bold mt-3">Naohiko's Blog</h1>
+        </Link>
+        <p className='text-slate-300 mt-1'>ようこそ私のテックブログへ</p>
       </div>
     </header>
   );
 
   const footer = (
     <footer>
-      <div>
-        <br />
+      <div className="border-t border-slate-500 mt-9 mb-3 py-5 text-center text-slate-400">
         <h3>Developed by Naohiko</h3>
       </div>
     </footer>
@@ -37,10 +37,12 @@ export default function RootLayout({
 
   return (
     <html lang="ja">
-      <body className={inter.className}>
-        {header}
-        {children}
-        {footer}
+      <body>
+        <div className='mx-auto max-w-3xl px-6'>
+          {header}
+          {children}
+          {footer}
+        </div>
       </body>
     </html>
   );

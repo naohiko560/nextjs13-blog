@@ -15,7 +15,7 @@ export const generateStaticParams = async () => {
   const posts = getPostMetadata();
   return posts.map((post) => ({
     slug: post.slug,
-  }))
+  }));
 };
 
 const PostPage = (props: any) => {
@@ -24,9 +24,11 @@ const PostPage = (props: any) => {
 
   return (
     <div>
-      <h1>{post.data.title}</h1>
-      <p>{post.data.date}</p>
-      <Markdown>{post.content}</Markdown>
+      <p className='text-center'>{post.data.date}</p>
+      <h1 className='text-2xl text-violet-600 font-bold text-center'>{post.data.title}</h1>
+      <article className="prose prose-xl">
+        <Markdown>{post.content}</Markdown>
+      </article>
     </div>
   );
 };
