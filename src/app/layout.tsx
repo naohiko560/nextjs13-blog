@@ -22,7 +22,6 @@ export default function RootLayout({
         <Link href={'/'}>
           <h1 className="text-3xl text-white font-bold mt-3">Naohiko's Blog</h1>
         </Link>
-        <p className='text-slate-300 mt-1'>ようこそ私のテックブログへ</p>
       </div>
     </header>
   );
