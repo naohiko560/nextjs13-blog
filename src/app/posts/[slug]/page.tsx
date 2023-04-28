@@ -2,6 +2,7 @@ import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import getPostMetadata from '@/components/getPostMetadata';
+import { Metadata } from 'next';
 
 const getPostContent = (slug: string) => {
   const folder = 'posts/';
@@ -18,6 +19,18 @@ export const generateStaticParams = async () => {
   }));
 };
 
+// 投稿記事のメタデータ設定
+export async function generateMetadata(props: any) {
+  const slug = props.params.slug;
+  const post = getPostContent(slug);
+
+  return {
+    title: post.data.title,
+    description: post.data.description,
+  };
+}
+
+// 投稿記事の出力
 const PostPage = (props: any) => {
   const slug = props.params.slug;
   const post = getPostContent(slug);
