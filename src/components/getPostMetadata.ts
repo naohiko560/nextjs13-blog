@@ -14,8 +14,10 @@ const getPostMetadata = (): PostMetadata[] => {
     const matterResult = matter(fileContents); // gray-matterでファイル内の文字列を取得
     return {
       title: matterResult.data.title,
-      subtitle: matterResult.data.subtitle,
       date: matterResult.data.date,
+      description: matterResult.data.description,
+      image: matterResult.data.image,
+      category: matterResult.data.category,
       slug: fileName.replace('.md', ''),
     };
   });

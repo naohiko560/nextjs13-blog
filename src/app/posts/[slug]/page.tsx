@@ -2,7 +2,7 @@ import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import getPostMetadata from '@/components/getPostMetadata';
-import { Metadata } from 'next';
+import Image from 'next/image';
 
 const getPostContent = (slug: string) => {
   const folder = 'posts/';
@@ -37,8 +37,22 @@ const PostPage = (props: any) => {
 
   return (
     <div>
-      <p className='text-center mb-2'>{post.data.date}</p>
-      <h1 className='text-2xl text-violet-600 font-bold text-center'>{post.data.title}</h1>
+      <p className="text-center">{post.data.date}</p>
+      <h1 className="text-2xl text-violet-600 font-bold text-center mt-3">
+        {post.data.title}
+      </h1>
+      <Image
+        alt={post.data.title}
+        src={`/images/${post.data.image}`}
+        width={1200}
+        height={700}
+        className="mt-3"
+      />
+      <div className="text-center mt-3">
+        <a href="/" className="">
+          {post.data.category}
+        </a>
+      </div>
       <article className="prose prose-xl">
         <Markdown>{post.content}</Markdown>
       </article>
