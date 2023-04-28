@@ -13,7 +13,7 @@ export const metadata = {
     title: 'nblog',
     description: 'なおひこのテックブログ',
     creator: '@naohiko_blog',
-    images: ['home_page'],
+    images: ['images/home_page.jpg'],
   },
 };
 
