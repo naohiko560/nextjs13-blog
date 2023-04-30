@@ -12,6 +12,7 @@ const getPostMetadata = (): PostMetadata[] => {
   const posts = markdownPosts.map((fileName) => {
     const fileContents = fs.readFileSync(`posts/${fileName}`, 'utf8'); // それぞれのファイルコンテンツを取得
     const matterResult = matter(fileContents); // gray-matterでファイル内の文字列を取得
+
     return {
       title: matterResult.data.title,
       date: matterResult.data.date,
@@ -22,7 +23,12 @@ const getPostMetadata = (): PostMetadata[] => {
     };
   });
 
-  return posts;
+  // 新しい日付順にソート
+  const sortedPosts = posts.sort((postA, postB) =>
+    new Date(postA.date) > new Date(postB.date) ? -1 : 1
+  );
+
+  return sortedPosts;
 };
 
 export default getPostMetadata;
