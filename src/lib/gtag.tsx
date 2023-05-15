@@ -1,6 +1,5 @@
-export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || '';
-
-export const existsGaId = GA_MEASUREMENT_ID !== '';
+// Google Analytics 測定ID
+export const GA_MEASUREMENT_ID = 'G-FEB3DM67MM';
 
 export const pageview = (path: string) => {
   window.gtag('config', GA_MEASUREMENT_ID, {
