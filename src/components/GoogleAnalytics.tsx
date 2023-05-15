@@ -1,18 +1,21 @@
-"use client";
+'use client';
 
-import { usePathname, useSearchParams } from "next/navigation";
-import Script from "next/script";
-import { useEffect } from "react";
-import { GA_MEASUREMENT_ID, pageview } from "../lib/gtag";
+import { usePathname, useSearchParams } from 'next/navigation';
+import Script from 'next/script';
+import { useEffect } from 'react';
+import { existsGaId, GA_MEASUREMENT_ID, pageview } from '../lib/gtag';
 
 const GoogleAnalytics = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    const url = pathname + searchParams.toString()
-    pageview(url)
-  }, [pathname, searchParams])
+    if (!existsGaId) {
+      return;
+    }
+    const url = pathname + searchParams.toString();
+    pageview(url);
+  }, [pathname, searchParams]);
 
   return (
     <>
