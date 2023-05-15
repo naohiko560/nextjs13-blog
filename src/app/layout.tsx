@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import '../styles/globals.css';
-import { Inter } from 'next/font/google';
 import Image from 'next/image';
-
-const inter = Inter({ subsets: ['latin'] });
 
 const siteName = "Naohiko's Blog";
 const description = 'techblog by naohiko';
