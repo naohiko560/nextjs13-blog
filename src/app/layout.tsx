@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import '../styles/globals.css';
 import Image from 'next/image';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 
 const siteName = "Naohiko's Blog";
 const description = 'techblog by naohiko';
@@ -71,6 +72,7 @@ export default function RootLayout({
 
   return (
     <html lang="ja">
+      <GoogleAnalytics />
       <body>
         <div className="mx-auto max-w-3xl px-6">
           {header}
