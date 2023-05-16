@@ -6,7 +6,7 @@ const postPreview = (props: PostMetadata) => {
   return (
     <div className="border border-violet-200 p-4 rounded-md shadow-md bg-white">
       <Link href={`/posts/${props.slug}`}>
-        <div className="hover:underline">
+        <div className="md:hover:underline">
           <Image
             alt={props.title}
             src={`/images/${props.image}`}

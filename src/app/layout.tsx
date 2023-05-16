@@ -4,7 +4,7 @@ import Image from 'next/image';
 import GoogleAnalytics from '../components/GoogleAnalytics';
 import type { Metadata } from 'next';
 
-const siteName = "Naohiko's Blog";
+const siteName = 'N-hack-blog';
 const description = 'techblog by naohiko';
 const url = 'https://nextjs13-blog-m0q4i0mnd-naohiko560.vercel.app/';
 const ogImageUrl = 'images/home_page.jpg';
@@ -48,18 +48,48 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <div className="text-center bg-slate-800 p-8 my-6 rounded-md">
-        <Image
-          alt="logo"
-          src="/logo.png"
-          width={40}
-          height={40}
-          className="mx-auto"
-        />
-        <Link href={'/'}>
-          <h1 className="text-3xl text-white font-bold mt-3">Naohiko's Blog</h1>
+      <div className="flex items-center space-x-5 my-5">
+        {/* <div>
+          <Image
+            alt="logo"
+            src="/logo.png"
+            width={40}
+            height={40}
+            className="mx-auto"
+          />
+        </div> */}
+        <Link href={'/'} className="md:hover:text-gray-600">
+          <h1 className="text-3xl font-bold">{siteName}</h1>
         </Link>
       </div>
+      <nav className="my-5 hidden md:block">
+        <ul className="flex space-x-5">
+          <li className="">
+            <a
+              href="/"
+              className="hover:bg-blue-300 hover:text-white rounded-md px-3 py-2 font-medium"
+            >
+              ホーム
+            </a>
+          </li>
+          <li className="">
+            <a
+              href="/profile"
+              className="hover:bg-blue-300 hover:text-white rounded-md px-3 py-2 font-medium"
+            >
+              プロフィール
+            </a>
+          </li>
+          <li className="">
+            <a
+              href="/contact"
+              className="hover:bg-blue-300 hover:text-white rounded-md px-3 py-2 font-medium"
+            >
+              お問い合わせ
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 
