@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nextjs13-blog-ashen.vercel.app/
+
+# Sitemaps
+Sitemap: https://nextjs13-blog-ashen.vercel.app/sitemap.xml
