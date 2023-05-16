@@ -2,13 +2,14 @@ import Link from 'next/link';
 import '../styles/globals.css';
 import Image from 'next/image';
 import GoogleAnalytics from '../components/GoogleAnalytics';
+import type { Metadata } from 'next';
 
 const siteName = "Naohiko's Blog";
 const description = 'techblog by naohiko';
 const url = 'https://nextjs13-blog-m0q4i0mnd-naohiko560.vercel.app/';
 const ogImageUrl = 'images/home_page.jpg';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
     default: siteName,
     template: `%s - ${siteName}`,
