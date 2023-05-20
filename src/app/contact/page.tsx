@@ -7,9 +7,9 @@ const ContactPage = () => {
       <div>
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLScE5B1EPtIQSKV_PyB4iBp0Q310hdAKCtxupJNVMAjV-ZFDXg/viewform?embedded=true"
-          width="720"
-          height="900"
-          className='m-auto bg-white'
+          width="100%"
+          height="1100"
+          className="bg-white"
         >
           読み込んでいます…
         </iframe>
