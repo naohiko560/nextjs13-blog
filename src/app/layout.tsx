@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import Image from 'next/image';
 import GoogleAnalytics from '../components/GoogleAnalytics';
 import type { Metadata } from 'next';
+import Burger from '../components/Burger';
 
 // headの設定
 const siteName = 'N-hack-blog';
@@ -134,6 +135,7 @@ export default function RootLayout({
     <html lang="ja">
       <GoogleAnalytics />
       <body>
+        <Burger />
         <div className="mx-auto max-w-3xl px-6">
           {header}
           {children}
