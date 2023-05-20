@@ -9,7 +9,7 @@ import Burger from '../components/Burger';
 const siteName = 'N-hack-blog';
 const description =
   'プログラミングの学習方法や経験の中で得た知見、便利ツールなどを中心に発信するテックブログです。';
-const url = 'https://nextjs13-blog-m0q4i0mnd-naohiko560.vercel.app/';
+const url = 'https://www.nhackblog.com/';
 const ogImageUrl = 'images/home_page.jpg';
 
 // ナビゲーションバーの設定

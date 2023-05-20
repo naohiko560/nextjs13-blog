@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://nextjs13-blog-ashen.vercel.app/
+Host: https://www.nhackblog.com/
 
 # Sitemaps
-Sitemap: https://nextjs13-blog-ashen.vercel.app/sitemap.xml
+Sitemap: https://www.nhackblog.com/sitemap.xml

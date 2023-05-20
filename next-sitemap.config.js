@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://nextjs13-blog-ashen.vercel.app/',
+  siteUrl: process.env.SITE_URL || 'https://www.nhackblog.com/',
   generateRobotsTxt: true, // (optional)
   // ...other options
 };
