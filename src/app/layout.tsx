@@ -9,8 +9,8 @@ import Burger from '../components/Burger';
 const siteName = 'N-hack-blog';
 const description =
   'プログラミングの学習方法や経験の中で得た知見、便利ツールなどを中心に発信するテックブログです。';
-const url = 'https://www.nhackblog.com/';
-const ogImageUrl = 'images/home_page.jpg';
+const siteUrl = 'https://www.nhackblog.com/';
+const ogImageUrl = 'https://www.nhackblog.com/home_page.jpg';
 
 // ナビゲーションバーの設定
 const menu1 = 'トップ';
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteName,
     description: description,
-    url: url,
+    url: siteUrl,
     siteName: siteName,
     images: [
       {
