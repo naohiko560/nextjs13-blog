@@ -45,24 +45,24 @@ const ProfilePage = () => {
               <dd className="md:col-span-2 sm:mt-1 md:mt-0">
                 <ul className="">
                   <li className="">
-                    <a
+                    <Link
                       href="https://twitter.com/naohiko_blog"
                       className="no-underline md:hover:underline md:hover:text-blue-400 text-blue-500 font-bold"
                       target="_blank"
                       rel="noopener nofollow"
                     >
                       Twitter
-                    </a>
+                    </Link>
                   </li>
                   <li className="mt-3">
-                    <a
+                    <Link
                       href="https://github.com/naohiko560"
                       className="no-underline md:hover:underline md:hover:text-blue-400 text-blue-500 font-bold"
                       target="_blank"
                       rel="noopener nofollow"
                     >
                       GitHub
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </dd>
