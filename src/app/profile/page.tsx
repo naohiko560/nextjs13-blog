@@ -29,12 +29,10 @@ const ProfilePage = () => {
             <div className="py-8 grid-cols-1 grid md:grid-cols-3 md:gap-4 border-t border-gray-700">
               <dt className="font-bold">経歴</dt>
               <dd className="md:col-span-2 sm:mt-1 md:mt-0">
-                <p>
-                  新卒から製造業などに従事するもモヤモヤした日々を過ごす（14年）
-                </p>
+                <p>新卒から製造業勤務で絶望（14年）</p>
                 <p className="ml-1">↓</p>
                 <p>
-                  3ヶ月プログラミング学習後、Web制作フリーランスに転身（37歳）
+                  プログラミング学習後、未経験からWeb制作フリーランスへ（37歳）
                 </p>
                 <p className="ml-1">↓</p>
                 <p>会社員に転向後、アプリ開発など経験</p>
