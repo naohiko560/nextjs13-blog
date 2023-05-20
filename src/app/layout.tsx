@@ -10,7 +10,7 @@ const siteName = 'N-hack-blog';
 const description =
   'プログラミングの学習方法や経験の中で得た知見、便利ツールなどを中心に発信するテックブログです。';
 const url = 'https://www.nhackblog.com/';
-const ogImageUrl = 'home_page.jpg';
+const ogImageUrl = 'images/home_page.jpg';
 
 // ナビゲーションバーの設定
 const menu1 = 'トップ';
