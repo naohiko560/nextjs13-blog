@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     description: description,
     site: '@naohiko_blog',
     creator: '@naohiko_blog',
-    images: [ogImageUrl],
+    images: ogImageUrl,
   },
 };
 
