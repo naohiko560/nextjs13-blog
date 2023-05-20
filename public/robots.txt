@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.nhackblog.com/
+
+# Sitemaps
+Sitemap: https://www.nhackblog.com/sitemap.xml
