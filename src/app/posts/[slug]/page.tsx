@@ -13,7 +13,7 @@ const getPostContent = (slug: string) => {
 };
 
 // 存在しないURLの時、404ページを表示する
-// export const dynamicParams = false;
+export const dynamicParams = false;
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
