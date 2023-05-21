@@ -15,6 +15,7 @@ const getPostContent = (slug: string) => {
 // 存在しないURLの時、404ページを表示する
 export const dynamicParams = false;
 
+// 静的パスを生成
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
   return posts.map((post) => ({
