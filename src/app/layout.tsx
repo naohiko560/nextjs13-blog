@@ -21,6 +21,8 @@ const menu3 = 'お問い合わせ';
 const twitter = 'https://twitter.com/naohiko_blog';
 const gitHub = 'https://github.com/naohiko560';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: {
     default: siteName,
