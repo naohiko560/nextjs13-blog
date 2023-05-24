@@ -1,28 +1,13 @@
 import getPostMetadata from '@/components/getPostMetadata';
 import PostPreview from '@/components/PostPreview';
-import { client } from '../lib/client';
 
-const HomePage = ({ blog }: any) => {
+const HomePage = () => {
   const postMetadata = getPostMetadata();
-  const postPreviews = postMetadata.map((blog) => (
-    <PostPreview key={blog.id} {...blog} />
+  const postPreviews = postMetadata.map((post) => (
+    <PostPreview key={post.slug} {...post} />
   ));
 
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">{postPreviews}</div>
-  );
-};
-
-export const generateStaticParams = async () => {
-  const data = await client.get({
-    endpoint: 'blog',
-  });
-
-  return {
-    props: {
-      blog: data,
-    },
-  };
+  return <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>{postPreviews}</div>;
 };
 
 export default HomePage;
