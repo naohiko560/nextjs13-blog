@@ -4,5 +4,6 @@ export interface PostMetadata {
   description: string;
   image: string;
   category: string;
-  slug: string;
+  id: string;
+  blog: any;
 }

@@ -5,11 +5,11 @@ import Image from 'next/image';
 const postPreview = (props: PostMetadata) => {
   return (
     <div className="border border-violet-200 p-4 rounded-md shadow-md bg-white">
-      <Link href={`/posts/${props.slug}`}>
+      <Link href={`/posts/${props.id}`}>
         <div className="md:hover:underline">
           <Image
             alt={props.title}
-            src={`/images/${props.image}`}
+            src={props.image}
             width={1200}
             height={700}
           />
