@@ -2,6 +2,7 @@ import fs from 'fs'; //ファイルシステム
 import matter from 'gray-matter';
 import { PostMetadata } from '@/components/PostMetadata';
 
+
 // slugを取得する処理
 const getPostMetadata = (): PostMetadata[] => {
   const folder = 'posts/'; // 投稿ファイルが入っているフォルダを指定
