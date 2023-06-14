@@ -21,7 +21,7 @@ const ProfilePage = () => {
           </div>
           <div>
             <h2 className="text-lg font-bold">なおひこ</h2>
-            <p className="text-sm tracking-wide mt-1">@遅咲きITエンジニア</p>
+            <p className="text-sm tracking-wide mt-1">@ITエンジニア</p>
           </div>
         </div>
         <div className="">
