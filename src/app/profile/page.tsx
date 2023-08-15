@@ -44,7 +44,7 @@ const ProfilePage = () => {
                 <ul className="">
                   <li className="">
                     <Link
-                      href="https://twitter.com/naohiko_blog"
+                      href="#"
                       className="no-underline md:hover:underline md:hover:text-blue-400 text-blue-500 font-bold"
                       target="_blank"
                       rel="noopener nofollow"
