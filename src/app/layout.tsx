@@ -18,7 +18,7 @@ const menu2 = 'プロフィール';
 const menu3 = 'お問い合わせ';
 
 // SNS設定
-const twitter = 'https://twitter.com/naohiko_blog';
+const twitter = '#';
 const gitHub = 'https://github.com/naohiko560';
 
 export const metadata: Metadata = {
