@@ -1,8 +1,8 @@
-import Link from 'next/link';
+import type { Metadata } from 'next';
 import '../styles/globals.css';
 import Image from 'next/image';
+import Link from 'next/link';
 import GoogleAnalytics from '../components/GoogleAnalytics';
-import type { Metadata } from 'next';
 import Burger from '../components/Burger';
 
 // headの設定
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteName,
     description: description,
-    site: '@naohiko_blog',
-    creator: '@naohiko_blog',
+    site: twitter,
+    creator: twitter,
     images: ogImageUrl,
   },
 };
