@@ -40,6 +40,3 @@ array(
 
 add_action('after_setup_theme', 'my_setup');
 ```
-
-## 参考URL
-https://www.daily-trial.com/lessons/web_site/courses/7722a840/articles/95c9d9b1
